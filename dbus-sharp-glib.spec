@@ -1,19 +1,19 @@
-%define name ndesk-dbus-glib
-%define version 0.4.1
-%define release %mkrel 6
-%define pkgname ndesk-dbus-glib-1.0
+%define name dbus-sharp-glib
+%define version 0.5.0
+%define release %mkrel 1
+%define pkgname %name-1.0
 
 Summary: Managed D-Bus implementation - GLib integration
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://www.ndesk.org/archive/dbus-sharp/%{name}-%{version}.tar.gz
+Source0: http://github.com/downloads/mono/dbus-sharp/%{name}-%{version}.tar.gz
 License: MIT
 Group: System/Libraries
-Url: http://www.ndesk.org/DBusSharp
+Url: http://mono.github.com/dbus-sharp/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel
-BuildRequires: ndesk-dbus-devel
+BuildRequires: dbus-sharp-devel
 BuildRequires: gtk-sharp2
 Requires: glib2
 BuildArch: noarch
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README COPYING
 %_prefix/lib/mono/%pkgname
-%_prefix/lib/mono/gac/NDesk.DBus.GLib/
+%_prefix/lib/mono/gac/%name/
 
 %files devel
 %defattr(-,root,root)
