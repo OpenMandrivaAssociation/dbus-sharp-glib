@@ -1,6 +1,6 @@
 %define name dbus-sharp-glib
 %define version 0.5.0
-%define release %mkrel 1
+%define release %mkrel 2
 %define pkgname %name-1.0
 
 Summary: Managed D-Bus implementation - GLib integration
