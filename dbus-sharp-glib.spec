@@ -1,11 +1,11 @@
 Summary:	Managed D-Bus implementation - GLib integration
 Name:		dbus-sharp-glib
-Version:	0.5.0
-Release:	3
+Version:	0.6.0
+Release:	1
 License:	MIT
 Group:		System/Libraries
 Url:		http://mono.github.com/dbus-sharp/
-Source0:	http://github.com/downloads/mono/dbus-sharp/%{name}-%{version}.tar.gz
+Source0:	https://github.com/mono/dbus-sharp-glib/releases/download/v%(echo %{version}|cut -d. -f1-2)/dbus-sharp-glib-%{version}.tar.gz
 BuildRequires:	gtk-sharp2
 BuildRequires:	dbus-sharp-devel
 BuildRequires:	pkgconfig(mono)
