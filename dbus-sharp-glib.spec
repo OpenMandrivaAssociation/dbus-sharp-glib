@@ -4,7 +4,7 @@ Version:	0.6.0
 Release:	1
 License:	MIT
 Group:		System/Libraries
-Url:		http://mono.github.com/dbus-sharp/
+Url:		https://mono.github.com/dbus-sharp/
 Source0:	https://github.com/mono/dbus-sharp-glib/releases/download/v%(echo %{version}|cut -d. -f1-2)/dbus-sharp-glib-%{version}.tar.gz
 BuildRequires:	gtk-sharp2
 BuildRequires:	dbus-sharp-devel
